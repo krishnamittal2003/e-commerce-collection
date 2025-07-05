@@ -3,7 +3,7 @@
 This is a frontend test task that fetches and displays products from a mock API with staggered animations and optional sorting.
 
 ## Live Preview
-👉 [Link to Live Site](https://e-commerce-collection-hazel.vercel.app/)
+👉 [https://e-commerce-collection-hazel.vercel.app/]
 
 ## Getting Started
 

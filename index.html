@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snowboard Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay">
+      <h1>All products</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="controls">
+      <span id="productCount">0 Products</span>
+      <select id="sort" class="dropdown">
+        <option value="">Sort By</option>
+        <option value="asc">Price: Low to High</option>
+        <option value="desc">Price: High to Low</option>
+      </select>
+    </div>
+
+    <!-- Empty State -->
+    <section id="emptyState" class="empty-state">
+      <img src="https://cdn3.iconfinder.com/data/icons/e-commerce-website-3/64/Out-of-stock-512.png" alt="Empty Box" />
+      <h2>Oops... looks like the shelves are empty!</h2>
+      <p>Smash that "Load Products" button to fix this tragic situation.</p>
+      <button id="loadProducts" class="btn-gradient">
+        <span class="btn-text">Load Products</span>
+        <span class="btn-loader hidden"></span>
+      </button>
+    </section>
+
+    <!-- Product Grid -->
+    <div id="productGrid" class="product-grid hidden"></div>
+
+    <!-- Error -->
+    <p id="error" class="error"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
